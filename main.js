@@ -7,24 +7,39 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 import { Water } from 'three/examples/jsm/objects/Water.js';
 import { Sky } from 'three/examples/jsm/objects/Sky.js';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader'
-import * as vesseljs from 'vesseljs'
+// import * as vesseljs from 'vesseljs'
+import vessel from './vesseljs/build/vessel.js'
 import * as Mirror from 'mirror'
 
-import * as Gui from 'vesseljs/examples/3D_engine/dat.gui.min.js'
-import {browse_files_Elias_Hasle} from 'vesseljs/examples/libs/browse_files_Elias_Hasle.js'
-import {Patch_interpolation} from 'vesseljs/examples/3D_engine/Patch_interpolation.js'
-import {Configureable_ocean} from 'vesseljs/examples/3D_engine/legacy/Configureable_ocean.js'
+// import * as Gui from 'vesseljs/examples/3D_engine/dat.gui.min.js'
+// import {browse_files_Elias_Hasle} from 'vesseljs/examples/libs/browse_files_Elias_Hasle.js'
+// import {Patch_interpolation} from 'vesseljs/examples/3D_engine/Patch_interpolation.js'
+// import {Configureable_ocean} from 'vesseljs/examples/3D_engine/legacy/Configureable_ocean.js'
+
+// import dat.gui.min from './vesseljs/examples/3D_engine/dat.gui.min.js'
+// import {browse_files_Elias_Hasle} from './vesseljs/examples/libs/browse_files_Elias_Hasle.js'
+// import {Patch_interpolation} from './vesseljs/examples/3D_engine/Patch_interpolation.js'
+// import {Configureable_ocean} from './vesseljs/examples/3D_engine/legacy/Configureable_ocean.js'
 
 
-
-
-import {STLLoader} from 'vesseljs/examples/3D_engine/STLLoader.js'
-import {mirror} from 'vesseljs/examples/3D_engine/legacy/Mirror.js'
-import {WaterShader} from 'vesseljs/examples/3D_engine/legacy/WaterShader.js'
+import {STLLoader} from 'three/examples/jsm/loaders/STLLoader'
+// import {STLLoader} from './vesseljs/examples/3D_engine/STLLoader.js'
+// import {mirror} from 'vesseljs/examples/3D_engine/legacy/Mirror.js'
+// import WaterShader from '/vesseljs/examples/3D_engine/legacy/WaterShader.js'
 // import {OrbitControls} from 'vesseljs/examples/3D_engine/OrbitControls.js'
-import {skybox_from_examples as Skybox} from 'vesseljs/examples/3D_engine/legacy/skybox_from_examples.js'
-import {Playback} from 'vesseljs/examples/3D_engine/Playback.js'
-import {Ship3D_v2 as Ship3D} from 'vesseljs/examples/3D_engine/Ship3D_v2.js'
+// import {skybox_from_examples as Skybox} from 'vesseljs/examples/3D_engine/legacy/skybox_from_examples.js'
+// import {Playback} from 'vesseljs/examples/3D_engine/Playback.js'
+// import {Ship3D_v2 as Ship3D} from 'vesseljs/examples/3D_engine/Ship3D_v2.js'
+
+
+
+// import {STLLoader} from 'vesseljs/examples/3D_engine/STLLoader.js'
+// import {mirror} from 'vesseljs/examples/3D_engine/legacy/Mirror.js'
+// import {WaterShader} from 'vesseljs/examples/3D_engine/legacy/WaterShader.js'
+// import {OrbitControls} from 'vesseljs/examples/3D_engine/OrbitControls.js'
+// import {skybox_from_examples as Skybox} from 'vesseljs/examples/3D_engine/legacy/skybox_from_examples.js'
+// import {Playback} from 'vesseljs/examples/3D_engine/Playback.js'
+// import {Ship3D_v2 as Ship3D} from 'vesseljs/examples/3D_engine/Ship3D_v2.js'
 
 // import * as Skybox from '/vesseljs/examples/3D_engine/legacy/skybox_from_examples.js'
 // import * as Playback from '/vesseljs/examples/3D_engine/Playback.js'
